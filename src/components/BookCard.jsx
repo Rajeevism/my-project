@@ -1,12 +1,18 @@
-import React from 'react';
-import '../styles/HomePage.css';
+import React from "react";
+import "/src/styles/BookCard.css";
 
-const BookCard = ({ title, price }) => {
+const BookCard = ({ title, price, condition, imageUrl }) => {
   return (
     <div className="book-card">
-      <div className="book-image"></div>
-      <h3>{title}</h3>
-      <p>₹{price} - Used</p>
+      <div className="book-image-container">
+        <img src={imageUrl} alt={title} className="book-image" />
+      </div>
+      <div className="book-details">
+        <h4 className="book-title">{title}</h4>
+        <p className="book-info">
+          ₹{price} - {condition}
+        </p>
+      </div>
     </div>
   );
 };

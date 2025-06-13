@@ -1,113 +1,59 @@
-/* Navbar styles */
-.navbar {
+.book-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    /* Adds space between sections */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.book-section h3 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.book-grid {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 32px;
-    background-color: white;
-    border-bottom: 1px solid #e0e0e0;
+    flex-wrap: wrap;
+    gap: 25px;
+    /* Space between the book cards */
+    justify-content: flex-start;
+    /* Aligns cards to the start. Use 'center' if you prefer. */
 }
 
-.logo-container img.app-logo {
-    width: 150px;
-    height: 90px;
-    border-radius: 12px;
-}
-
-.nav-menu {
-    display: flex;
-    gap: 32px;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: #1c1c1c;
-    font-weight: 700;
-    font-size: 18px;
-    transition: color 0.2s ease;
-}
-
-.nav-link:hover {
-    color: #007bff;
-}
-
-/* Hero section */
+/* Styles for your hero section (you can adjust as needed) */
 .hero {
-    text-align: center;
-    margin-top: 40px;
+    margin: 30px 0;
 }
 
 .hero h2 {
-    font-size: 28px;
-    color: #333;
+    font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
 .hero-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .buy-btn,
 .sell-btn {
     padding: 12px 24px;
-    font-size: 16px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    color: white;
 }
 
 .buy-btn {
-    background-color: #2563eb;
-}
-
-.buy-btn:hover {
-    background-color: #1e40af;
+    background-color: #007bff;
+    color: white;
 }
 
 .sell-btn {
-    background-color: #16a34a;
-}
-
-.sell-btn:hover {
-    background-color: #166534;
-}
-
-/* Old Books */
-.old-books {
-    padding: 40px 60px;
-}
-
-.old-books h3 {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 16px;
-}
-
-.book-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 24px;
-}
-
-.book-card {
-    background-color: white;
-    padding: 16px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease;
-}
-
-.book-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-.book-image {
-    height: 100px;
-    background-color: #e5e7eb;
-    border-radius: 6px;
-    margin-bottom: 10px;
-}
+    background-color: #28a745;
+    color: white; }
